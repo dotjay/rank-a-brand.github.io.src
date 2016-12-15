@@ -3,19 +3,13 @@
     +make-container
     .row
       padding: 0 0 50px 20px
-      &.why-we-need-you
-        padding-top: 20px
-
-      &.why-i-should-do-this
-        .second-headline
-          text-align: right
-
       .headline
         font-size: 40px
 
       .small-headline
         font-size: 26px
-        color: $page-color-gray-dark
+        color: $page-color-purple
+        // $page-color-gray-dark
         font-weight: normal
         margin-top: 20px
 
@@ -23,7 +17,7 @@
         margin: 10px 10px 0 10px
         .text
           text-align: justify
-          margin: 10px 0
+          margin: 10px 30px 10px 15px
           max-width: 730px
 
         ul
@@ -35,6 +29,25 @@
               min-width: 130px
 
         .read-more
-          font-weight: bold
           color: $page-color-gray-dark
           +right
+
+    .row
+      &.why-we-need-you
+        padding-top: 20px
+        padding-bottom: 30px
+
+      &.why-i-should-do-this
+        .second-headline
+          text-align: right
+
+      &.wanted
+        .article
+          border: 1px solid $page-color-purple
+          border-radius: 15px
+          padding: 15px 20px 20px 20px
+          margin: 0 10px 30px 10px
+          color: $page-color-gray-dark
+          +box-shadow(0, 0, 15px, rgba(0,0,0,0.1))
+          .small-headline
+            margin: 0
