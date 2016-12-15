@@ -3,14 +3,17 @@
 
   .header-wrapper
     +make-container
-    padding: 65px 35px 25px 35px
+    padding: 25px 25px 25px 25px
+    +min-width-sm
+      padding: 65px 35px 25px 35px
     .logo
       +make-xs-column(12)
-      +make-sm-column(3)
+      +make-md-column(3)
+      text-align: center
 
     .headline-wrapper
       +make-xs-column(12)
-      +make-sm-column(9)
+      +make-md-column(9)
       text-align: center
 
       .headline
@@ -18,8 +21,9 @@
         +relative
         +inline-block
         font-size: 9vw
-        margin: 20px 0 50px 0
+        margin: 20px 0 10px 0
         +min-width-sm
+          margin: 20px 0 50px 0
           line-height: 1
           font-size: 40px
 
@@ -27,7 +31,9 @@
           +block
           font-weight: normal
           font-size: 5vw
+          margin-top: 20px
           +min-width-sm
+            margin-top: 0
             padding-left: 10px
             font-size: 24px
             text-align: left
