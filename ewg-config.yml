@@ -1,0 +1,68 @@
+development: &default
+  # haml @globals (default)
+  globals:
+    robots:      'index,follow,noodp,noydir'
+    title:       'Rank a Brand needs you!'
+    canonical:   'TODO'
+    language:    'en'
+    description: 'Our team needs more poeople peaople to success the website relaunch.'
+    keywords:    'rank abrand sustainable social wanted web development seo marketing volunteers search'
+
+    opengraph_metatag_data:
+      title: '@globals.title'
+      type: 'website'
+      url: '@globals.canonical'
+      description: '@globals.description'
+      image: 'TODO'
+      site_name: '@globals.canonical'
+
+    twitter_metatag_data:
+      card: 'summary'
+      site: '@CreativeWorkflo'
+      description: '@globals.description'
+      title: '@globals.title'
+      image: 'TODO'
+      url: '@globals.canonical'
+
+  # browser-sync
+  server:
+    port: 9294
+    open: "external"
+    notify: true
+    startPath: 'index.html'
+    server:
+      baseDir: './dist'
+    ui:
+      port: 8080
+      weinre:
+        port: 9090
+    ghostMode:
+      clicks: true
+      forms: true
+      scroll: true
+
+  # do not change unless you know why ;)
+  generators:
+    folder: './ewg'
+
+  paths:
+    src:
+      base:       './src'
+      images:     'assets/images'
+      scripts:    'assets/scripts'
+      styles:     'assets/styles'
+      public:     'assets/public'
+      views:      'views'
+    dist:
+      base:       './dist'
+      images:     'images'
+      scripts:    'scripts'
+      styles:     'styles'
+      public:     ''
+      views:      ''
+
+test:
+  <<: *default
+
+production:
+  <<: *default

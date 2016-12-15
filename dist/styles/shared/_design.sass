@@ -1,0 +1,40 @@
+.content-wrapper
+  .content-inner-wrapper
+    +make-container
+    .row
+      padding: 0 0 50px 20px
+      &.why-we-need-you
+        padding-top: 20px
+
+      &.why-i-should-do-this
+        .second-headline
+          text-align: right
+
+      .headline
+        font-size: 40px
+
+      .small-headline
+        font-size: 26px
+        color: $page-color-gray-dark
+        font-weight: normal
+        margin-top: 20px
+
+      .article
+        margin: 10px 10px 0 10px
+        .text
+          text-align: justify
+          margin: 10px 0
+          max-width: 730px
+
+        ul
+          margin: 0
+          padding-left: 40px
+          li
+            .label
+              +inline-block
+              min-width: 130px
+
+        .read-more
+          font-weight: bold
+          color: $page-color-gray-dark
+          +right

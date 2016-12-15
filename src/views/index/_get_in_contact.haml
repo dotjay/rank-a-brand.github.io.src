@@ -1,0 +1,21 @@
+%article.article
+
+  %h2.small-headline Get in contact, if you want to be a part of this team
+
+  %ul
+    %li
+      .label
+        marketing:
+      = @mail_to 'mario.dziamski@rankabrand.de', 'mario.dziamski@rankabrand.de'
+    %li
+      .label
+        development:
+      = @mail_to 'tom.hanoldt@creative-workflow.berlin', 'tom.hanoldt@creative-workflow.berlin'
+    %li
+      .label
+        in general:
+      = @mail_to 'contact@rankabrand.org', 'contact@rankabrand.org'
+
+  .text.read-more
+    also use:
+    = @link_to 'www.rankabrand.org/home/contact', 'www.rankabrand.org/home/contact'

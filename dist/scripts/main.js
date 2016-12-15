@@ -1,0 +1,1 @@
+(function(){this.Application=function(){function n(){this.share=new Share}return n}(),$(document).ready(function(){return window.application=new Application})}).call(this);

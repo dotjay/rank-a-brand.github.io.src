@@ -1,0 +1,44 @@
+.header
+  padding-top: $head-menu-height
+
+  .header-wrapper
+    +make-container
+    padding: 65px 35px 25px 35px
+    .logo
+      +make-xs-column(12)
+      +make-sm-column(3)
+
+    .headline-wrapper
+      +make-xs-column(12)
+      +make-sm-column(9)
+      text-align: center
+
+      .headline
+        color: $page-color-gray-dark
+        +relative
+        +inline-block
+        font-size: 9vw
+        margin: 20px 0 50px 0
+        +min-width-sm
+          line-height: 1
+          font-size: 40px
+
+        .small
+          +block
+          font-weight: normal
+          font-size: 5vw
+          +min-width-sm
+            padding-left: 10px
+            font-size: 24px
+            text-align: left
+
+        .exclamation-mark
+          +block
+          +absolute
+          right: 10px
+          top: 0
+          font-size: 20vw
+          +min-width-sm
+            font-size: 100px
+            right: -30px
+            top: -20px

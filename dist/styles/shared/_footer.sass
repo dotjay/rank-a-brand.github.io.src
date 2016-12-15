@@ -1,0 +1,28 @@
+.footer
+  margin-top: 40px
+  background-color: $footer-background-color
+  min-height: 250px
+  +relative
+
+  .footer-wrapper
+    +make-container
+    color: $footer-text-color
+    padding: 20px 0
+    height: 100%
+    a, a:hover, a:active, a:focus
+      color: $footer-link-color
+
+    img.w3c
+      margin: 10px auto
+      +block
+
+    .text
+      margin: 20px
+
+    .copyright
+      +absolute
+      text-align: center
+      bottom: 10px
+      left: 0
+      right: 0
+      width: 100%
