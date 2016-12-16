@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # set app variables
+GITHUB_IO_URL='https://rank-a-brand.github.io'
 GITHUB_IO_ORIGIN='git@github.com:rank-a-brand/rank-a-brand.github.io.git'
 DIST_FOLDER='dist'
-
 
 # set config variables
 export TERMINAL_APP_LOG_ENABLED=0
