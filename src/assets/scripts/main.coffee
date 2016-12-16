@@ -6,7 +6,7 @@ class @Application
           selector: '.fixed-on-top'
         fadeIn:
           selector: '.fade-in-on-load'
-          speed: 700
+          speed: 1000
         inView:
           selector: '.animate-if-in-view'
           speed:    700
