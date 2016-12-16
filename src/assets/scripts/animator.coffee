@@ -39,7 +39,7 @@ class @AnimationFixedOnTop
     $(window).bind('resize', @chackAnimatedElemets)
     @chackAnimatedElemets()
 
-  chackAnimatedElemets: =>
+  checkUndoAnimatedElemets: =>
     top = $(window).scrollTop()
 
     indexToDel = []
@@ -50,6 +50,11 @@ class @AnimationFixedOnTop
 
     for index in indexToDel
       @undoElements.slice(index, 1)
+
+  chackAnimatedElemets: =>
+    @checkUndoAnimatedElemets()
+
+    top = $(window).scrollTop()
 
     @animatedElements.each((i, el) =>
       $el = $(el)
@@ -66,5 +71,4 @@ class @AnimationFixedOnTop
           position: 'fixed'
           top: 0
           left: offset.left
-          'max-width': $el.width()
     )
