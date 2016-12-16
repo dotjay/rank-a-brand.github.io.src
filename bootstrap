@@ -16,8 +16,7 @@ export TERMINAL_APP_COMMAND_PATH="$TERMINAL_APP_PATH/commands"
 
 
 # load lib scripts
-source "$TERMINAL_APP_LIB_PATH/os"
-source "$TERMINAL_APP_LIB_PATH/color"
-source "$TERMINAL_APP_LIB_PATH/command"
-source "$TERMINAL_APP_LIB_PATH/log"
-source "$TERMINAL_APP_LIB_PATH/lib"
+for lib_file in $TERMINAL_APP_LIB_PATH/*
+do
+  source $lib_file
+done
