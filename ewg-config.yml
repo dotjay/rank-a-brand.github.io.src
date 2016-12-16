@@ -5,8 +5,8 @@ development: &default
     title:       'Rank a Brand needs you!'
     canonical:   'Thttps://rank-a-brand.github.io'
     language:    'en'
-    description: 'Our team needs more poeople peaople to success the website relaunch.'
-    keywords:    'rank abrand sustainable social wanted web development seo marketing volunteers search'
+    description: 'Rank a Brand needs developer, web developer and marketing experts for our website relaunch. We are providing an independent and reliable brand-comparison website.'
+    keywords:    'rank a brand sustainable social wanted web development seo marketing volunteers oprn source '
 
     opengraph_metatag_data:
       title: '@globals.title'
