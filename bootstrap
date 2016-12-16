@@ -2,7 +2,7 @@
 
 # set app variables
 GITHUB_IO_ORIGIN='git@github.com:rank-a-brand/rank-a-brand.github.io.git'
-DIST_FOLDER='./dist'
+DIST_FOLDER='dist'
 
 
 # set config variables
