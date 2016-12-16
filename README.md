@@ -1,4 +1,4 @@
-# rank a brand github.io page for finding new relaunch team memvers
+# rank a brand github.io page for finding new relaunch team members [![Build Status](https://travis-ci.org/rank-a-brand/relaunch-recruit-website.svg?branch=master)](https://travis-ci.org/rank-a-brand/relaunch-recruit-website)
 
 ###### Supports:
   * css styling with [sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) and pre build helpers
