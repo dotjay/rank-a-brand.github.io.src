@@ -1,4 +1,4 @@
-# rank a brand github.io page for finding new relaunch team members [![Build Status](https://travis-ci.org/rank-a-brand/relaunch-recruit-website.svg?branch=master)](https://travis-ci.org/rank-a-brand/relaunch-recruit-website)
+# github.io page for finding new team members [![Build Status](https://travis-ci.org/rank-a-brand/relaunch-recruit-website.svg?branch=master)](https://travis-ci.org/rank-a-brand/relaunch-recruit-website)
 
 ###### Supports:
   * css styling with [sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) and pre build helpers
@@ -38,6 +38,7 @@ Available commands:
  build                  build the dist files in production mode
  deploy                 deploy the dist folder to github.io
  help                   print help
+ lint                   run code linter
  serve                  serve this repo in production mode
  setup                  setup dependencies for this application
 ```
