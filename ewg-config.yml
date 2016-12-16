@@ -24,6 +24,12 @@ development: &default
       image: 'https://rank-a-brand.github.io/images/logo.png'
       url: '@globals.canonical'
 
+    share:
+      url:   'https://rank-a-brand.github.io'
+      image: 'https://rank-a-brand.github.io/images/logo.png'
+      title: 'Rank a Brand needs your help!'
+      text:  'Rank a Brand needs developer, web developer and marketing experts for our website relaunch.'
+
   # browser-sync
   server:
     port: 9294
