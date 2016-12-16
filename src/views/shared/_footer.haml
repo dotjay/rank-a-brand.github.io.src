@@ -2,6 +2,10 @@
   - github_image = @image_tag('social/github.png', alt: 'code available on github', title: 'code available on github')
   = @link_to github_image+'code vailable on github ', 'https://github.com/rank-a-brand/relaunch-recruit-website', {target: '_blank'}
 
+  - travis_image = @image_tag('https://travis-ci.org/rank-a-brand/relaunch-recruit-website.svg?branch=master', alt: 'travis build status', title: 'travis build status')
+  .travis
+    = @link_to travis_image, 'https://travis-ci.org/rank-a-brand/relaunch-recruit-website', {target: '_blank'}
+
 .text
   This website was generated with the
   = @link_to 'easy-website-generator', 'https://github.com/easy-website-generator/easy-website-generator', {target: '_blank'}
