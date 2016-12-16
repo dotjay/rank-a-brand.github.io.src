@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#command-info: setup dependencies for this application
+
+source bootstrap
+
+npm install -g gulp coffee-script yarn easy-website-generator
+
+yarn install
