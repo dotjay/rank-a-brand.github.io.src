@@ -11,5 +11,8 @@
     %strong sustainability and social responsibility.
 
   .read-more
-    more:
-    = @link_to 'www.rankabrand.org/home/what-we-do', 'https://www.rankabrand.org/home/what-we-do', {target: '_blank'}
+    .hidden-xs
+      more:
+      = @link_to 'www.rankabrand.org/home/what-we-do', 'https://www.rankabrand.org/home/what-we-do', {target: '_blank'}
+    .hidden-sm.hidden-md.hidden-lg
+      = @link_to 'read more', 'https://www.rankabrand.org/home/what-we-do', {target: '_blank', class: 'green'}

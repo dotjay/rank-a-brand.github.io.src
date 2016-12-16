@@ -10,5 +10,8 @@
     or services.
 
   .read-more
-    more:
-    = @link_to 'www.rankabrand.org/home/who-we-are', 'https://www.rankabrand.org/home/who-we-are', {target: '_blank'}
+    .hidden-xs
+      more:
+      = @link_to 'www.rankabrand.org/home/who-we-are', 'https://www.rankabrand.org/home/who-we-are', {target: '_blank'}
+    .hidden-sm.hidden-md.hidden-lg
+      = @link_to 'read more', 'https://www.rankabrand.org/home/who-we-are', {target: '_blank', class: 'green'}

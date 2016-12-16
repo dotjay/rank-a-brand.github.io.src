@@ -5,17 +5,20 @@
   %ul
     %li
       .label
-        marketing:
+        marketing:&nbsp;
       = @mail_to 'mario.dziamski@rankabrand.de', 'mario.dziamski@rankabrand.de'
     %li
       .label
-        development:
+        development:&nbsp;
       = @mail_to 'tom.hanoldt@creative-workflow.berlin', 'tom.hanoldt@creative-workflow.berlin'
     %li
       .label
-        in general:
+        in general:&nbsp;
       = @mail_to 'contact@rankabrand.org', 'contact@rankabrand.org'
 
   .text.read-more
-    also use:
-    = @link_to 'www.rankabrand.org/home/contact', 'https://www.rankabrand.org/home/contact', {target: '_blank'}
+    .hidden-xs
+      also use:
+      = @link_to 'www.rankabrand.org/home/contact', 'https://www.rankabrand.org/home/contact', {target: '_blank'}
+    .hidden-sm.hidden-md.hidden-lg
+      = @link_to 'official contact form', 'https://www.rankabrand.org/home/contact', {target: '_blank', class: 'green'}
