@@ -8,4 +8,6 @@ git_ensure_local_repo_up_to_date
 
 git_ensure_local_repo_clean
 
+newline
+
 git_force_push_subtree $GITHUB_IO_ORIGIN $DIST_FOLDER

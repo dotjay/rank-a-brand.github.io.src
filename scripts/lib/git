@@ -9,7 +9,7 @@ function git_force_push_subtree {
 }
 
 function git_ensure_local_repo_clean {
-  echo -ne "local repository clean?\t"
+  echo -ne "local repository clean?"
   if [[ -z $(git status -s) ]] ; then
     say_ok
   else
