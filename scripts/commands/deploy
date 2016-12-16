@@ -11,5 +11,5 @@ git_ensure_local_repo_clean
 
 newline
 
-green 'start deploy'
+green 'starting deploy'
 git_force_push_subtree $GITHUB_IO_ORIGIN $DIST_FOLDER
