@@ -58,6 +58,9 @@ class @AnimationFixedOnTop
 
     @animatedElements.each((i, el) =>
       $el = $(el)
+
+      return if $el.css('position') == 'fixed'
+
       offset = $el.offset()
       if(top > offset.top)
         @undoElements.push
