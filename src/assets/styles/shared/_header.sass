@@ -9,12 +9,13 @@
     .logo
       +make-xs-column(12)
       +make-md-column(3)
-      +max-width-sm
-        min-height: 94px
-      img
-        margin: 0 auto
+      min-height: 72px
+      +max-width-xs
+        text-align: center
       .fixed-on-top
+        max-width: 200px
         position: relative
+        +inline-block
         +min-width-sm
           z-index: 11
         +max-width-xs
