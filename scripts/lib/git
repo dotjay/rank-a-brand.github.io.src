@@ -9,7 +9,7 @@ function git_force_push_subtree {
 }
 
 function git_ensure_local_repo_clean {
-  echo -ne "local repository clean?"
+  echo -ne "local repository clean? "
   if [[ -z $(git status -s) ]] ; then
     say_ok
   else
@@ -20,7 +20,7 @@ function git_ensure_local_repo_clean {
 }
 
 function git_ensure_local_repo_up_to_date {
-  echo -ne "local repository up to date?\t"
+  echo -ne "local repository up to date? "
   git fetch origin 2>/dev/null
   reslog=$(git status -u | grep -i 'use "git pull" to')
   if [[ "${reslog}" != "" ]] ; then
