@@ -3,7 +3,7 @@ development: &default
   globals:
     robots:      'index,follow,noodp,noydir'
     title:       'Rank a Brand needs you!'
-    canonical:   'Thttps://rank-a-brand.github.io'
+    canonical:   'https://rank-a-brand.github.io/index.html'
     language:    'en'
     description: 'Rank a Brand needs developer, web developer and marketing experts for our website relaunch. We are providing an independent and reliable brand-comparison website.'
     keywords:    'rank a brand sustainable social wanted web development seo marketing volunteers oprn source '
