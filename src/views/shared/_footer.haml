@@ -1,6 +1,6 @@
-.w3c
-  = @link_to @image_tag("html5-badge-h-css3-device-performance-semantics.png", {width: "229", height: "64", alt: "HTML5 Powered with CSS3 / Styling, Device Access, Performance &amp; Integration, and Semantics", title: "HTML5 Powered with CSS3 / Styling, Device Access, Performance &amp; Integration, and Semantics"}), 'https://validator.w3.org/nu/?doc=https%3A%2F%2Frank-a-brand.github.io', target: '_blank'
-  = @link_to 'html valid', 'https://validator.w3.org/nu/?doc=https%3A%2F%2Frank-a-brand.github.io', target: '_blank'
+.github
+  - github_image = @image_tag('social/github.png', alt: 'code available on github', title: 'code available on github')
+  = @link_to github_image+'code vailable on github ', 'https://github.com/rank-a-brand/relaunch-recruit-website', {target: '_blank'}
 
 .text
   This website was generated with the
@@ -8,6 +8,10 @@
   brought to you by
   = @link_to 'www.creative-workflow.berlin', 'https://www.creative-workflow.berlin/company.html', {target: '_blank'}
   and loads under 70kb at all =)
+
+.w3c
+  = @link_to @image_tag("html5-badge-h-css3-device-performance-semantics.png", {width: "229", height: "64", alt: "HTML5 Powered with CSS3 / Styling, Device Access, Performance &amp; Integration, and Semantics", title: "HTML5 Powered with CSS3 / Styling, Device Access, Performance &amp; Integration, and Semantics"}), 'https://validator.w3.org/nu/?doc=https%3A%2F%2Frank-a-brand.github.io', target: '_blank'
+  = @link_to 'html5 valid', 'https://validator.w3.org/nu/?doc=https%3A%2F%2Frank-a-brand.github.io', target: '_blank'
 
 .checks
   %span.item
@@ -17,6 +21,7 @@
   %span.item
     seo score: 90/100 ->
     = @link_to '(check with oneproseo)', 'https://www.advertising.de/sitecheck/?url=https://rank-a-brand.github.io', {target: '_blank'}
+
 
 .copyright
   = @copyright 'Rank a Brand'
