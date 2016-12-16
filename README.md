@@ -21,7 +21,7 @@ Just run `./app setup` and `./app serve`
 
 ##### other plattforms
 ```
-npm install -g easy-website-generator coffee-script yarn gulp
+npm install -g easy-website-generator coffee-script yarn gulp coffeelint
 
 yarn install
 
