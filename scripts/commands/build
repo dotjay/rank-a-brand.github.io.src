@@ -4,4 +4,4 @@
 
 source bootstrap
 
-ewg generate --production
+ewg generate-and-exit --production

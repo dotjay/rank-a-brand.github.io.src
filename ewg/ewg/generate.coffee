@@ -8,5 +8,13 @@ gulp.task 'generate', (cb) ->
                 'compile-sass:generate'
                 'compile-coffee:generate'
               ],
-              'compile-haml:generate',
+              'compile-haml:generate'
               cb)
+
+
+gulp.task 'generate-and-exit', ->
+  runSequence(
+              'generate'
+              ->
+                process.exit(0)
+              )
