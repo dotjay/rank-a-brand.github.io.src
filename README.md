@@ -25,6 +25,9 @@ npm install -g easy-website-generator coffee-script yarn gulp
 
 yarn install
 
+# see https://github.com/sass/node-sass/issues/1804
+npm rebuild node-sass
+
 ewg serve
 ```
 
