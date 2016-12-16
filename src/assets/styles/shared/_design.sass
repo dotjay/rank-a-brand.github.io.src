@@ -21,6 +21,7 @@
 
       .article
         margin: 0
+        font-size: 20px
         +min-width-sm
           margin: 10px 10px 0 10px
         .text
@@ -32,11 +33,19 @@
           margin: 0
           padding-left: 10px
         ul
+          list-style: none
+          margin: 7px 0 0 0
+          padding: 0 0 0 25px
           +max-width-sm
             margin-top: 0
             margin-bottom: 0
           li
             padding-bottom: 3px
+            &:before
+              content: '\00bb'
+              +inline-block
+              padding-right: 7px
+              color: $page-color-gray-dark
             .label
               +min-width-sm
                 +inline-block
@@ -44,6 +53,7 @@
 
         .read-more
           color: $page-color-gray-dark
+          font-size: 16px
           +right
           +max-width-sm
             padding-right: 30px
@@ -74,15 +84,14 @@
           color: $page-color-gray-dark
           background-color: #f6f6f6
           +box-shadow(0, 0, 15px, rgba(0,0,0,0.1))
-          ul
-            margin: 7px 0 0 0
-            padding: 0 0 0 35px
           .text
             padding-bottom: 0
+            padding-left: 10px
+            line-height: 1.5
           .text, li, b, i
             font-size: 16px
             i
               color: $page-color-gray
           .small-headline
-            margin: 0 0 10px 0
+            margin: 0 0 0 0
             color: $page-color-purple
