@@ -1,5 +1,4 @@
-# EWG-Theme: "ewg-theme-simple"
-This is the minimal Easy-Website-Generator setup you can have. It is a good point to start developing static and fast websites in a quick and modern way =)
+# rank a brand github.io page for finding new relaunch team memvers
 
 ###### Supports:
   * css styling with [sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) and pre build helpers
@@ -17,17 +16,28 @@ This is the minimal Easy-Website-Generator setup you can have. It is a good poin
 ### Installation
 First you need to install [nodeJs](https://nodejs.org/en/download/)
 
+##### linux/osx
+Just run `./app setup` and `./app serve`
+
+##### other plattforms
 ```
-npm install -g easy-website-generator
-npm install -g coffee-script
-npm install -g yarn
+npm install -g easy-website-generator coffee-script yarn gulp
 
 yarn install
 
 ewg serve
-
 ```
-After running ``ewg serve`` the ewg will compile the html pages and opens a browser. On every source change the browser will reload. (If you add or remove files, sometimes you have to restart `ewg serve`)
+
+### Commandline interface
+```
+Usage: ./app [command] [help|*]
+Available commands:
+ build                  build the dist files in production mode
+ deploy                 deploy the dist folder to github.io
+ help                   print help
+ serve                  serve this repo in production mode
+ setup                  setup dependencies for this application
+```
 
 ### Ressources
 > "[Easy-Website-Generator](https://github.com/easy-website-generator/)"
