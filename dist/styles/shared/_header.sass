@@ -9,7 +9,19 @@
     .logo
       +make-xs-column(12)
       +make-md-column(3)
-      text-align: center
+      +max-width-sm
+        min-height: 94px
+      img
+        margin: 0 auto
+      .fixed-on-top
+        position: relative
+        +min-width-sm
+          z-index: 11
+        +max-width-xs
+          text-align: center
+          position: relative !important
+          top: 0 !important
+          left: 0 !important
 
     .headline-wrapper
       +make-xs-column(12)
@@ -45,6 +57,6 @@
           top: 0
           font-size: 20vw
           +min-width-sm
-            font-size: 100px
+            font-size: 80px
             right: -30px
             top: -20px
