@@ -30,7 +30,10 @@
 
     .text
       margin-top: 30px
-      text-align: center
+      text-align: justify
+      padding: 0 10px
+      +min-width-sm
+        text-align: center
 
     .github
       text-align: center
@@ -49,6 +52,7 @@
         padding: 5px 30px
         font-size: 14px
         +max-width-sm
+          padding: 5px 5px
           +block
       a
         font-size: 14px

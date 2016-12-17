@@ -17,7 +17,7 @@
         font-weight: normal
         margin-top: 20px
         +max-width-sm
-          padding: 0 20px
+          padding: 0 5px 0 10px
 
       .article
         margin: 0
@@ -47,10 +47,6 @@
               padding-right: 7px
               color: $page-color-gray-dark
               font-weight: bold
-            .label
-              +min-width-sm
-                +inline-block
-                min-width: 130px
 
         .read-more
           color: $page-color-gray-dark
@@ -61,6 +57,21 @@
           a.green
             color: $page-color-green
     .row
+      &.get-in-contact
+        ul
+          li
+            +max-width-xs
+              font-size: 5vw
+            .mail
+              +inline-block
+              +max-width-xs
+                +block
+                padding-left: 10px
+
+            .label
+              +inline-block
+              +min-width-sm
+                min-width: 130px
       &.why-we-need-you
         +max-width-sm
           padding-bottom: 20px
@@ -78,19 +89,27 @@
 
         .small-headline
           margin-top: 0
+          padding-left: 40px
           +min-width-sm
             padding-left: 150px
 
       &.wanted
         padding-bottom: 20px
         .article
-          border: 1px solid $page-color-purple
-          border-radius: 15px
-          padding: 15px 20px 20px 20px
-          margin: 0 10px 30px 10px
           color: $page-color-gray-dark
           background-color: #f6f6f6
           +box-shadow(0, 0, 15px, rgba(0,0,0,0.1))
+
+          border-top: 1px solid $page-color-purple
+          border-bottom: 1px solid $page-color-purple
+          margin: 0 0 20px 0
+          padding: 5px 0
+
+          +min-width-sm
+            border: 1px solid $page-color-purple
+            border-radius: 15px
+            padding: 15px 20px 20px 20px
+            margin: 0 10px 30px 10px
           .text
             padding-bottom: 0
             padding-left: 10px
