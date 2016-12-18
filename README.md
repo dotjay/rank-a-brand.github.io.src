@@ -38,10 +38,10 @@ Usage: ./app [command] [help|*]
 Available commands:
  build                  build the dist files in production mode
  clear-facebook-cache   clear the website cache for facebook/sharer/sharer.php
- deploy                 deploy the dist folder to github.io
+ deploy                 build, commit dist folder and deploy to github.io
  help                   print help
  lint                   run code linter
- serve                  serve this repo in production mode
+ serve                  serve dist folder in development mode, opens a browser
  setup                  setup dependencies for this application
 ```
 
