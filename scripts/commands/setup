@@ -4,9 +4,11 @@
 
 source bootstrap
 
-npm install -g gulp coffee-script yarn easy-website-generator coffeelint
+npm install -g gulp coffee-script yarn easy-website-generator coffeelint bower
 
 yarn install
+
+bower install
 
 # see https://github.com/sass/node-sass/issues/1804
 npm rebuild node-sass
