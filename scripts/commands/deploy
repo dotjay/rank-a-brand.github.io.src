@@ -11,7 +11,7 @@ newline
 green 'pushing dist'
 git add ./dist
 git commit -m 'update dist'
-git ps
+git push
 
 newline
 
